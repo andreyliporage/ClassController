@@ -1,0 +1,18 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://google.com",
+      "name": "Andrey Liporage de Matos",
+      "birth": "1995-09-21",
+      "schooling": "ensino_superior",
+      "modalidade": "D"
+    },
+    {
+      "avatar_url": "https://google.com",
+      "name": "Sthefane Azevedo dos Santos Silva",
+      "birth": "1995-09-21",
+      "schooling": "ensino_superior",
+      "modalidade": "P"
+    }
+  ]
+}
