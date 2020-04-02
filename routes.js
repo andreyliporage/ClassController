@@ -18,6 +18,8 @@ routes.get('/teachers/:id', teachers.show)
 
 routes.get('/teachers/:id/edit', teachers.edit)
 
+routes.put('/teachers', teachers.put)
+
 routes.post('/teachers', teachers.post)
 
 routes.get('/students', function(req, res) {
