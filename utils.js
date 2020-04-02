@@ -21,5 +21,15 @@ module.exports = {
             case("mestrado"): return "Mestrado"
             case("doutorado"): return "Doutorado"
         }
-    }     
+    },
+
+    date: function(timestamp) {
+        const date = new Date(timestamp)
+
+        const year = date.getUTCFullYear()
+        const month = `0${date.getUTCMonth() + 1}`.slice(-2) // month de 0 a 11
+        const day = `0${date.getUTCDate()}`.slice(-2)
+
+        return `${year}-${month}-${day}`
+    }
 }

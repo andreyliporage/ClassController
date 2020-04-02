@@ -22,7 +22,12 @@
         <div class="item">
             <div>Grau de Escolaridade</div>
             <div>
-               {{teacher.graduation}}
+               <select name="graduation">
+                <option value="medio">Ensino Médio Completo</option>
+                <option value="superior">Ensino Superior Completo</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+               </select>
             </div>
         </div>
 
@@ -41,7 +46,7 @@
         <div class="item">
             <div>Área de atuação</div>
             <div>
-                <input type="text" name="subjects" placeholder="Entre com as suas especialidades" value="{{teacher.subjetcs}}">
+                <input type="text" name="subjects" placeholder="Entre com as suas especialidades" value="{{teacher.subjects}}">
             </div>
         </div>       
 

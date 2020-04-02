@@ -2,12 +2,12 @@
 
 {% block content %}
 <form class="card" method="POST" action="/teachers">
-    <section class="avatar"></section>
+    <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover"></section>
     <section class="details">
         <h3>Editar Professor</h3>
 
         {% include "teachers/fields.njk" %}
-
+        
     </section>
 </form>
     {% endblock %}
