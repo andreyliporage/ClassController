@@ -74,5 +74,5 @@ exports.edit = function(req, res) {
         birth: "",
     }
 
-    return res.render("teachers/edit", {teacher})
+    return res.render("teachers/edit", {teacher: foundTeacher})
 }
