@@ -1,0 +1,49 @@
+<div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input type="url" name="avatar_url" placeholder="https://">
+             </div>
+        </div>
+
+        <div class="item">
+            <div>Professor</div>
+            <div>
+                <input type="text" name="name" placeholder="Inserir Nome">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Data de Nascimento</div>
+            <div>
+                <input type="date" name="birth">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Grau de Escolaridade</div>
+            <div>
+                <select name="graduation">
+                    <option value="medio">Ensino Médio Completo</option>
+                    <option value="superior">Ensino Superior Completo</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Modalidade</div>
+            <div>
+                <input type="radio" name="modalidade" value="P"><span>Presencial</span>
+                <input type="radio" name="modalidade" value="D"><span>À Distância</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Área de atuação</div>
+            <div>
+                <input type="text" name="subjects" placeholder="Entre com as suas especialidades" value="{{teacher.subjetcs}}">
+            </div>
+        </div>       
+
+        <button type="submit">Salvar</button>
