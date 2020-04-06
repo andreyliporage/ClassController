@@ -159,12 +159,11 @@ select {
     font-size: 12px;
 }
 
-button[type="submit"],
-a.button {
+button[type="submit"] {
     margin-top: 32px;
     padding: 8px 16px;
-    width: 100%;
     border-radius: 6px;
+    width: 30%;
     background-color: var(--primary-color);
     color: white;
     font-weight: bold;
@@ -174,8 +173,22 @@ a.button {
 }
 
 a.button {
-    display: block;
+    margin-top: 32px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    width: 40%;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
+}
+
+#form-delete button {
+    background-color: red;
 }
