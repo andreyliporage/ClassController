@@ -137,6 +137,10 @@ header {
 
 /* === Form === */
 
+form {
+    position: relative;
+}
+
 input {
     outline: none;
     color: #555;
@@ -163,13 +167,13 @@ button[type="submit"] {
     margin-top: 32px;
     padding: 8px 16px;
     border-radius: 6px;
-    width: 30%;
+    width: 40%;
     background-color: var(--primary-color);
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
-    outline: none;
+    outline: none;    
 }
 
 a.button {
@@ -191,4 +195,7 @@ a.button {
 
 #form-delete button {
     background-color: red;
+    position: absolute;
+    right: 1px;
+    top: -63px;
 }
