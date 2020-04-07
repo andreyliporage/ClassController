@@ -1,7 +1,7 @@
 {
   "teachers": [
     {
-      "id": 2,
+      "id": 1,
       "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
       "name": "Isaac Newton",
       "birth": -10318838400000,
@@ -11,7 +11,7 @@
       "subjects": "Física, Matemática, Astronomia "
     },
     {
-      "id": 3,
+      "id": 2,
       "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Galileo.arp.300pix.jpg",
       "name": "Galileu Galilei",
       "birth": -12808281600000,
