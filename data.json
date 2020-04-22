@@ -1,5 +1,33 @@
 {
-  "students": [],
+  "students": [
+    {
+      "id": 1,
+      "birth": "1955-02-24",
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/300px-Steve_Jobs_Headshot_2010-CROP2.jpg",
+      "name": "Steve Jobs",
+      "email": "jobs@apple.com",
+      "grade": "1EM",
+      "studyload": "1500"
+    },
+    {
+      "id": 2,
+      "birth": "1955-10-28",
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Dts_news_bill_gates_wikipedia.JPG/300px-Dts_news_bill_gates_wikipedia.JPG",
+      "name": "Bill Gates",
+      "email": "gates@microsoft.com",
+      "grade": "2EM",
+      "studyload": "1700"
+    },
+    {
+      "id": 3,
+      "birth": "1971-06-28",
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/330px-Elon_Musk_Royal_Society.jpg",
+      "name": "Elon Musk",
+      "email": "musk@tesla.com",
+      "grade": "3EM",
+      "studyload": "1900"
+    }
+  ],
   "teachers": [
     {
       "id": 1,
@@ -9,7 +37,11 @@
       "graduation": "doutorado",
       "modalidade": "P",
       "created_at": 1585860655657,
-      "subjects": "Física, Matemática, Astronomia "
+      "subjects": [
+        "Física",
+        " Matemática",
+        " Astronomia "
+      ]
     },
     {
       "id": 2,
@@ -19,7 +51,21 @@
       "graduation": "mestrado",
       "modalidade": "D",
       "created_at": 1585860761465,
-      "subjects": "Física, Matemática, Filosofia"
+      "subjects": [
+        "Física",
+        " Matemática",
+        " Filosofia"
+      ]
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Tesla_Sarony.jpg/300px-Tesla_Sarony.jpg",
+      "name": "Nikola Tesla",
+      "birth": -3581020800000,
+      "graduation": "superior",
+      "modalidade": "P",
+      "created_at": 1587570460729,
+      "subjects": "Engenharia Mecânica, Engenharia Elétrica"
     }
   ]
 }

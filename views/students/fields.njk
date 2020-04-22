@@ -12,6 +12,13 @@
             </div>
         </div>
 
+         <div class="item">
+            <div>E-mail</div>
+            <div>
+                <input type="email" name="email" placeholder="Inserir Email" value="{{student.email}}">
+            </div>
+        </div>       
+
         <div class="item">
             <div>Data de Nascimento</div>
             <div>
@@ -20,35 +27,44 @@
         </div>
 
         <div class="item">
-            <div>Grau de Escolaridade</div>
+            <div>Ano Escolar</div>
             <div>
-               <select name="graduation">
-                <option value="medio">Ensino Médio Completo</option>
-                <option value="superior">Ensino Superior Completo</option>
-                <option value="mestrado">Mestrado</option>
-                <option value="doutorado">Doutorado</option>
-               </select>
+                <select name="grade">
+                    <option value="5EF"
+                        {%if student.grade=="5EF"%}checked{% endif %}
+                    >5° ano ensino fundamental</option>
+                    <option students.grade="6EF"
+                        {%if s=="6EF"%}checked{% endif %}
+                    >6° ano ensino fundamental</option>
+                    <option value="7EF"
+                        {%if student.grade=="7EF"%}checked{% endif %}
+                    >7° ano ensino fundamental</option>
+                    <option value="8EF"
+                        {%if student.grade=="8EF"%}checked{% endif %}
+                    >8° ano ensino fundamental</option>
+                    <option value="9EF"
+                        {%if student.grade=="9EF"%}checked{% endif %}
+                    >9° ano ensino fundamental</option>
+                    <option value="1EM"
+                        {%if student.grade=="1EM"%}checked{% endif %}
+                    >1° ano ensino médio</option>
+                    <option value="2EM"
+                        {%if student.grade=="2EM"%}checked{% endif %}
+                    >2° ano ensino médio</option>
+                    <option value="3EM"
+                        {%if student.grade=="3EM"%}checked{% endif %}
+                    >3° ano ensino médio</option>
+                </select>
             </div>
         </div>
 
         <div class="item">
-            <div>Modalidade</div>
+            <div>Carga Horária Semanal</div>
             <div>
-                <input type="radio" name="modalidade" value="P" {% if student.modalidade == "P" %}
-                checked
-                {% endif %} ><span>Presencial</span>
-                <input type="radio" name="modalidade" value="D" {% if student.modalidade == "D" %}
-                checked
-                {% endif %}><span>À Distância</span>
+                <input type="number" name="studyload" value="{{student.studyload}}">
             </div>
         </div>
-
-        <div class="item">
-            <div>Área de atuação</div>
-            <div>
-                <input type="text" name="subjects" placeholder="Entre com as suas especialidades" value="{{student.subjects}}">
-            </div>
-        </div>       
+         
         
         <button type="submit">Salvar</button>
         

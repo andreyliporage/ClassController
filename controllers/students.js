@@ -1,14 +1,10 @@
 const fs = require("fs")
 const data = require("../data.json")
-const {age, graduation, date} = require("../utils")
+const {age, graduation, date, grade} = require("../utils")
 
 exports.index = function(req, res) {  
     const foundStudents = data.students
 
-    for (const student of foundStudents) {
-        const subjects =  student.subjects.toString().split(",")
-        student.subjects = subjects
-    }
 
     return res.render('students/index', {students: foundStudents})    
 }
@@ -28,11 +24,9 @@ exports.show = function(req, res) {
 
     const student = {
         ...foundStudent,
-        age: age(foundStudent.birth),
+        grade: grade(foundStudent.grade),
+        age: date(foundStudent.birth).birthDay,
         graduation: graduation(foundStudent.graduation),
-        subjects: foundStudent.subjects.toString().split(","),
-        modalidade: foundStudent.modalidade,
-        created_at: new Intl.DateTimeFormat("pt-BR").format(foundStudent.created_at),
     }
 
     return res.render("students/show", {student})
@@ -47,21 +41,19 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, birth, graduation, modalidade, subjects} = req.body
+    birth = Date.parse(req.body.birth)
 
-    birth = Date.parse(birth)
-    const created_at = Date.now()
-    const id = Number(data.students.length + 1)
+    let id = 1
+    const lastStudent = data.students[data.students.length - 1]
+
+    if(lastStudent) {
+        id = lastStudent.id + 1
+    }
 
     data.students.push({
         id,
-        avatar_url,
-        name,
         birth,
-        graduation,
-        modalidade,
-        created_at,
-        subjects,
+       ...req.body
     })
 
     // Lembrar que: desse jeito apagará tudo no arquivo. Ficará sempre só 1 dado
@@ -86,7 +78,7 @@ exports.edit = function(req, res) {
 
     const student = {
         ...foundStudent,
-        birth: date(foundStudent.birth), 
+        birth: date(foundStudent.birth).iso, 
     }    
 
     return res.render("students/edit", {student})
