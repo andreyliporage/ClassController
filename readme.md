@@ -20,4 +20,4 @@ criar, atualizar e deletar os membros.</p>
 
 ![Classes - Google Chrome 22_04_2020 13_09_19](https://user-images.githubusercontent.com/60411725/80006640-8c7cae00-849b-11ea-8414-b6f612078d9d.png)
 
-![Classes - Google Chrome 22_04_2020 13_09_44](https://user-images.githubusercontent.com/60411725/80006811-c64db480-849b-11ea-903b-3b563885a553.png)
+![Classes - Google Chrome 22_04_2020 13_20_23](https://user-images.githubusercontent.com/60411725/80007018-13ca2180-849c-11ea-8fff-deac4f09d1f0.png)
