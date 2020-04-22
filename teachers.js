@@ -26,7 +26,7 @@ exports.show = function(req, res) {
         ...foundTeacher,
         age: age(foundTeacher.birth),
         graduation: graduation(foundTeacher.graduation),
-        subjects: foundTeacher.subjects.split(","),
+        subjects: foundTeacher.subjects.toString().split(","),
         modalidade: foundTeacher.modalidade,
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at),
     }
